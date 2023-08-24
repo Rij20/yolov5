@@ -1,4 +1,6 @@
 # YOLOv5 🚀 by Ultralytics, AGPL-3.0 license
+
+
 """
 Run YOLOv5 detection inference on images, videos, directories, globs, YouTube, webcam, streams, etc.
 
@@ -98,6 +100,8 @@ def run(
     model = DetectMultiBackend(weights, device=device, dnn=dnn, data=data, fp16=half)
     stride, names, pt = model.stride, model.names, model.pt
     imgsz = check_img_size(imgsz, s=stride)  # check image size
+
+    print("hello radha")
 
     # Dataloader
     bs = 1  # batch_size
